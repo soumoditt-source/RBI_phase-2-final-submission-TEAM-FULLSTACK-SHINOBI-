@@ -94,10 +94,12 @@ st.markdown("""
     --text-secondary: #8b9dc3;
 }
 
-html, body, .stApp {
+[data-testid="stAppViewContainer"] {
     background: linear-gradient(135deg, #050b18 0%, #0a1628 40%, #0d1f3c 70%, #050b18 100%) !important;
+}
+* {
     font-family: 'Inter', sans-serif !important;
-    color: var(--text-primary) !important;
+    color: var(--text-primary);
 }
 
 /* Animated gradient header */
