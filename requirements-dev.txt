@@ -1,0 +1,30 @@
+# MuleHunter.AI — Full Dependency Stack (FullStackShinobi)
+# Install all: pip install -r requirements.txt
+
+# --- Data Engineering ---
+polars
+pyarrow
+pandas
+numpy
+scipy
+dask[dataframe]
+
+# --- Machine Learning & Explainability ---
+scikit-learn
+lightgbm
+xgboost
+shap
+
+# --- Graph Analysis ---
+rustworkx
+networkx
+
+# --- Visualization & Dashboard ---
+plotly
+streamlit
+pydeck
+
+# --- API & Server ---
+fastapi
+uvicorn[standard]
+fastparquet

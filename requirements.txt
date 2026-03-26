@@ -1,30 +1,9 @@
-# MuleHunter.AI — Full Dependency Stack (FullStackShinobi)
-# Install all: pip install -r requirements.txt
+# MuleHunter.AI — Production UI Dependencies ONLY (Vercel Node)
+# The heavy ML libraries (xgboost, lightgbm, shap) are isolated in requirements-dev.txt 
+# as all ML metrics/dossiers are pre-computed for ultra-fast dashboard queries.
 
-# --- Data Engineering ---
-polars
-pyarrow
-pandas
-numpy
-scipy
-dask[dataframe]
-
-# --- Machine Learning & Explainability ---
-scikit-learn
-lightgbm
-xgboost
-shap
-
-# --- Graph Analysis ---
-rustworkx
-networkx
-
-# --- Visualization & Dashboard ---
-plotly
-streamlit
-pydeck
-
-# --- API & Server ---
-fastapi
-uvicorn[standard]
-fastparquet
+streamlit>=1.32.0
+pandas>=2.1.0
+numpy>=1.26.0
+plotly>=5.18.0
+pydeck>=0.8.0
